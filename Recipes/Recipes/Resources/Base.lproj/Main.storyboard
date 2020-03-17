@@ -34,6 +34,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="textField:" destination="aYE-6O-zd9" eventType="editingDidEnd" id="K2Z-ru-Szf"/>
+                                            </connections>
                                         </textField>
                                     </navigationItem>
                                 </items>
@@ -43,6 +46,9 @@
                         <viewLayoutGuide key="safeArea" id="p0i-we-fae"/>
                     </view>
                     <navigationItem key="navigationItem" id="u9l-qF-Myc"/>
+                    <connections>
+                        <outlet property="textField" destination="eFK-tr-jac" id="IOg-05-rIg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c44-YM-gLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="fvb-fV-bXz" style="IBUITableViewCellStyleDefault" id="o3A-rL-Vfj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" textLabel="fvb-fV-bXz" style="IBUITableViewCellStyleDefault" id="o3A-rL-Vfj">
                                 <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o3A-rL-Vfj" id="BXk-TJ-8xa">

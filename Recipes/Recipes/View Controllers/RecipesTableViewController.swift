@@ -15,6 +15,10 @@ class RecipesTableViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
+    
+    override func viewDidLoad() {
+    super.viewDidLoad()
+    }
 
     // MARK: - Table view data source
 
